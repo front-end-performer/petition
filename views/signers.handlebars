@@ -1,0 +1,23 @@
+<section class="wrapper">
+    <a class="wrapper__nav_left" href="../thanks">prev page</a>
+    <a class="wrapper_logout" href="../logout">log out!</a>
+
+    <img src="/bigfoot.png" alt="bigfoot img" />
+
+    <p>See all signers</p>
+    <ul>
+        {{#each list}}
+        <li>
+            <img class="gif" src="/bigfoot-ul-li.gif" alt="fig" />
+            {{#if this.url}}
+            <a href="{{this.url}}" target="_blank">{{this.firstname}} {{this.lastname}}</a>
+            {{else}}
+            {{this.firstname}} {{this.lastname}}
+            {{/if}}
+
+            <span class="signers_paragraph">{{this.userage}}</span>
+            <a href="/signers/{{this.town}}">{{this.town}}</a>
+        </li>
+        {{/each}}
+    </ul>
+</section>

@@ -1,0 +1,20 @@
+<section class="wrapper">
+    {{!-- <div class="wrapper_header"> --}}
+    <img src="./bigfoot.png" alt="bigfoot img" />
+    <p>Greatings from Big Foot Land. Log in NOW! 😂</p>
+    {{!-- </div> --}}
+    <form class="login_form" method="POST">
+        <input type="email" placeholder="..." name="email" required />
+        <label>Your Email</label>
+        <input type="password" placeholder="..." name="password" required />
+        <label>Password</label>
+
+        {{#if error}}
+        <div class="error">oops! Something went wrong!</div>
+        {{/if}}
+
+        <input name="_csrf" value="{{csrfToken}}" type="hidden" />
+        <button id="btn" class="btn">Log in!</button>
+    </form>
+    <p class="wrapper__login">If you aren't Big Foot 👹 member, please <a href="./register"><i>register</i></a>.</p>
+</section>

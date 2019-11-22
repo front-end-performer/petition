@@ -1,0 +1,24 @@
+<section class="wrapper">
+    <a class="wrapper_logout" href="./logout">Log out!</a>
+    <img src="./bigfoot.png" alt="bigfoot img" />
+    <p class="wrapper__paragraph">Every so often a story comes along that really captures your imagination and, bigfoot
+        is one of them. Bigfoot is
+        so rare, it risks extinction. Do you agree that Bigfoot needs to be protected? Shout out to all bigfoot fans out
+        there!</p>
+
+    <form method="POST">
+
+        {{#if error}}
+        <div class="error">oops! Something went wrong!</div>
+        {{/if}}
+
+        <input name="_csrf" value="{{csrfToken}}" type="hidden" />
+
+        <input id="hidden" type="hidden" name="signatures" required />
+        <canvas id="canvas" width="500" height="100"></canvas>
+        <span>Sign Here!</span>
+
+        <button id="btn" class="btn">Submit!</button>
+    </form>
+</section>
+<script src="../script.js"></script>

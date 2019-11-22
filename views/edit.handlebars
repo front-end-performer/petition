@@ -1,0 +1,27 @@
+<section class="wrapper">
+    <a class="wrapper__nav_left" href="./thanks">prev page</a>
+
+    <img src="./bigfoot.png" alt="bigfoot img" />
+
+    <p>Edit your profile!</p>
+
+    <form class="login_form" method="POST">
+        <input type="text" placeholder="..." value="{{first}}" name="first" />
+        <label>First Name</label>
+        <input type="text" placeholder="..." value="{{last}}" name="last" />
+        <label>Last Name</label>
+        <input type="email" placeholder="..." value="{{email}}" name="email" />
+        <label>Your Email</label>
+        <input type="password" placeholder="..." name="password" />
+        <label>Password</label>
+        <input type="text" placeholder="..." value="{{age}}" name="age" />
+        <label>Age</label>
+        <input type="text" placeholder="..." value="{{city}}" name="city" />
+        <label>City</label>
+        <input type="url" placeholder="..." value="{{homepage}}" name="homepage" />
+        <label>Home Page</label>
+
+        <input name="_csrf" value="{{csrfToken}}" type="hidden" />
+        <button id="btn" class="btn">UPDATE</button>
+    </form>
+</section>
