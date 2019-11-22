@@ -4,7 +4,7 @@
 
 ## Tech Stack
 
-HTML, CSS, JavaScript, Handlebars.js, Canvas, Node.js with Express.js, Postgres SQL, csurf/helmet, Cookie session package && !imagination!
+HTML, CSS, JavaScript, Handlebars.js, Canvas, Node.js with Express.js, Postgres SQL, csurf/helmet, Cookie session package && <b>imagination</b>
 
 ## Visuals
 *
